@@ -1,12 +1,79 @@
-<!doctype html>
-<html lang="zh-CN">
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>大模型科普网站</title>
+    <title>My Website</title>
+    <style>
+      /* Background (soft gradient with subtle color) */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #f0f9ff, #ffffff); /* light cyan → white */
+        color: #333;
+      }
+
+      /* Card container */
+      .card {
+        max-width: 500px;
+        margin: 60px auto;
+        padding: 25px;
+        background: #fff;
+        border-radius: 12px;
+        border: 1px solid #e5e7eb;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* shadow-sm */
+        transition: 0.3s;
+      }
+
+      .card:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* hover effect */
+      }
+
+      /* Heading with accent underline */
+      h2 {
+        color: #06b6d4; /* cyan accent */
+        border-bottom: 3px solid #f97316; /* orange underline */
+        display: inline-block;
+        padding-bottom: 4px;
+      }
+
+      /* Accent button */
+      .btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 24px;
+        background-color: #06b6d4; /* cyan primary */
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: #f97316; /* orange hover */
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      }
+
+      /* Paragraph detail */
+      p {
+        line-height: 1.6;
+        color: #555;
+      }
+    </style>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <div class="card">
+      <h2>Welcome!</h2>
+      <p>
+        Our website now has accent colors, a better background, and shadow effects.  
+        You can highlight interactive elements with <strong>cyan</strong> and <strong>orange</strong>.
+      </p >
+      <button class="btn">Get Started</button>
+    </div>
   </body>
 </html>
