@@ -1,12 +1,52 @@
-<!doctype html>
-<html lang="zh-CN">
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>大模型科普网站</title>
+    <title>My Website</title>
+    <style>
+      /* Background */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #f8f9fa, #ffffff); /* not pure white */
+        color: #333;
+      }
+
+      /* Accent colors */
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #06b6d4; /* cyan accent */
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+      }
+
+      .btn:hover {
+        background-color: #f97316; /* orange on hover */
+      }
+
+      /* Card style with shadow */
+      .card {
+        max-width: 400px;
+        margin: 40px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); /* shadow-sm effect */
+      }
+    </style>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <div class="card">
+      <h2>Welcome!</h2>
+      <p>
+        This is an example card with a light background, shadow, and border radius.
+      </p >
+      <button class="btn">Click Me</button>
+    </div>
   </body>
-</html>
